@@ -9,7 +9,7 @@ from keras.layers import Dense
 from keras.layers import LSTM
 import numpy as np
 
-df = pd.read_csv(r"C:\Users\ferna\OneDrive - Universidad Politécnica de Madrid\IIT\Machine Learning\Project\ProjectCSV\S&P 500 Historical Data V2.csv")
+df = pd.read_csv(r"C:\Users\mende\OneDrive\Escritorio\CS584 - Machine Learning\Project\S&P 500 Historical Data V2.csv")
 
 # Drop columns that we don't need
 df.drop(columns=["Vol.","Change %","Open","High","Low"], inplace=True)
