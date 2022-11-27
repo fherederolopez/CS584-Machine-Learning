@@ -3,8 +3,8 @@ from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-us = pd.read_csv(r"C:\Users\ferna\OneDrive - Universidad Politécnica de Madrid\IIT\Machine Learning\Project\ProjectCSV\SP500&us_covid.csv", index_col=0)
-eur = pd.read_csv(r"C:\Users\ferna\OneDrive - Universidad Politécnica de Madrid\IIT\Machine Learning\Project\ProjectCSV\europe_cases.csv")
+us = pd.read_csv(r"C:\Users\mende\OneDrive\Escritorio\CS584 - Machine Learning\Project\SP500&us_covid.csv", index_col=0)
+eur = pd.read_csv(r"C:\Users\mende\OneDrive\Escritorio\CS584 - Machine Learning\Project\europe_cases.csv")
 
 us.rename(columns={"Deaths":"us_deaths"}, inplace=True)
 eur.rename(columns={"date":"Date", "new":"eur_deaths"}, inplace=True)
